@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<form id="frm1" action="#">
+	
+			<table>
+				
+				
+				<tr>
+					<td>NIM</td>
+					<td>
+						<select>
+							<option value="Satria Pambayun.I.M">A11.2018.11110</option>
+							<option value="Dody Tua">A11.2018.11069</option>
+							<option value="Raul Gedi">A11.2018.11091</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Nilai Tugas</td>
+					<td><input name="fnilaitugas" type="number" min="0" max="100" required</td>
+				</tr>
+				<tr>
+					<td>Nilai UTS</td>
+					<td><input name="fnilaiuts" type="number" min="0" max="100" required</td>
+				</tr>
+				<tr>
+					<td>Nilai UAS</td>
+					<td><input name="fnilaiuas" type="number" min="0" max="100" required</td>
+				</tr>
+				<tr>
+					<td>Nilai Akhir</td>
+					<td><input name="fnilaiakhir" type="number" min="0" max="100" required</td>
+				</tr>
+					
+				
+			
+			
+			</table>
+	 
+	</form> 
+
+	<p>Data Mahasiswa</p>
+
+	<button onclick="myFunction()">Simpan</button>
+
+	<p id="demo"></p>
+
+	<script>
+		function myFunction() {
+		    var x = document.forms["frm1"];
+		    var text = "";
+		    var i;
+		    for (i = 0; i < x.length ;i++) {
+		        text += x.elements[i].value + "<br>";
+		    }
+		    document.getElementById("demo").innerHTML = text;
+		}
+	</script>
+
+</body>
+</html
